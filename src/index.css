@@ -1,19 +1,19 @@
 @import "tailwindcss";
 
 @theme {
-  --color-brand: #b3322a;
-  --color-brand-deep: #5e1713;
-  --color-brand-soft: #d65a48;
-  --color-accent: #ffc93c;
-  --color-accent-soft: #ffdc7a;
-  --color-pop: #8a1e19;
-  --color-cream: #fff8ec;
-  --color-fog: #fcecd6;
-  --color-tint-1: #ffe6c2;
-  --color-tint-2: #fbd2cc;
-  --color-tint-3: #fff0b0;
-  --color-tint-4: #fde0d0;
-  --color-ink: #2e1a17;
+  --color-brand: #4f5d2f;
+  --color-brand-deep: #252c15;
+  --color-brand-soft: #74854a;
+  --color-accent: #f2c230;
+  --color-accent-soft: #f7d870;
+  --color-pop: #3b4522;
+  --color-cream: #f9f7ea;
+  --color-fog: #efedd6;
+  --color-tint-1: #e4e8c6;
+  --color-tint-2: #dfe5d2;
+  --color-tint-3: #f7ecb0;
+  --color-tint-4: #ece7cf;
+  --color-ink: #1f2414;
 
   --font-display: "Anton", "Impact", sans-serif;
   --font-serif: "Instrument Serif", "Georgia", serif;
@@ -69,6 +69,71 @@
       opacity: 0;
     }
   }
+}
+
+/* Palette variations — each overrides the @theme color tokens (Musgo); see src/themes.ts. */
+[data-theme="original"] {
+  --color-brand: #b3322a;
+  --color-brand-deep: #5e1713;
+  --color-brand-soft: #d65a48;
+  --color-accent: #ffc93c;
+  --color-accent-soft: #ffdc7a;
+  --color-pop: #8a1e19;
+  --color-cream: #fff8ec;
+  --color-fog: #fcecd6;
+  --color-tint-1: #ffe6c2;
+  --color-tint-2: #fbd2cc;
+  --color-tint-3: #fff0b0;
+  --color-tint-4: #fde0d0;
+  --color-ink: #2e1a17;
+}
+
+[data-theme="oceano"] {
+  --color-brand: #1e4fa3;
+  --color-brand-deep: #0c1f45;
+  --color-brand-soft: #4a7bd0;
+  --color-accent: #5ee0d6;
+  --color-accent-soft: #9ff0e9;
+  --color-pop: #163a7a;
+  --color-cream: #f3f7fc;
+  --color-fog: #e2ecf8;
+  --color-tint-1: #d6e6fa;
+  --color-tint-2: #dbe2f6;
+  --color-tint-3: #d4f5f1;
+  --color-tint-4: #e3e9f7;
+  --color-ink: #0e1a2e;
+}
+
+[data-theme="meia-noite"] {
+  --color-brand: #2b3a8f;
+  --color-brand-deep: #11163d;
+  --color-brand-soft: #5566c4;
+  --color-accent: #ffb547;
+  --color-accent-soft: #ffcd80;
+  --color-pop: #1f2a6e;
+  --color-cream: #f5f6fc;
+  --color-fog: #e7e9f7;
+  --color-tint-1: #dfe3fa;
+  --color-tint-2: #e6defa;
+  --color-tint-3: #ffecc8;
+  --color-tint-4: #e3e6f5;
+  --color-ink: #141833;
+}
+
+[data-theme="crepusculo"] {
+  --color-brand: #7e22ce;
+  --color-brand-deep: #2a0f45;
+  --color-brand-soft: #fb7185;
+  --color-accent: #ff9a4d;
+  --color-accent-soft: #ffbd8a;
+  --color-pop: #a21caf;
+  --color-cream: #fdf6fb;
+  --color-fog: #f6e6f3;
+  --color-tint-1: #fde0e6;
+  --color-tint-2: #ecdffd;
+  --color-tint-3: #ffe3cf;
+  --color-tint-4: #f8dcef;
+  --color-ink: #241433;
 }
 
 @layer base {
